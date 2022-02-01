@@ -1,3 +1,3 @@
-# codepath_kali
+# codepath_homework
 
 See branches for assignments.
