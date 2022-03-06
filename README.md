@@ -26,17 +26,17 @@ In the GIF, the user manually logs into the blue website on a first browser (Chr
 
 Vulnerability #2: SQL Injection
 
-Description: Although very trivial, upon visiting the "Salesperson List" and injecting the command " OR 1=1--' into the URL, the malicious individual was able to change the currently viewed user into an entirely different user (as highlighted). When replicated on the other website, no apparent change was apparent. By not sanitizinig this URL input, a more tenacious third party could further exploit the vulnerability and gain access to more latent information. 
+Description: Although very trivial, upon visiting the "Salesperson List" and injecting the command "' OR 1=1--'" into the URL, the malicious individual was able to change the currently viewed user into an entirely different user (as highlighted). When replicated on the other website, no apparent change was apparent. By not sanitizinig this URL input, a more tenacious third party could further exploit the vulnerability and gain access to more latent information. 
 
 <img src="blue-sql.gif">
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Cross-Site Scripting
 
-Description:
+Description: This was one of the simplest exploits to find (because the user had fallen victim to it randomly while searching for vulnerabilities since other peers are also providing penetration testing). The user inputs the following script into the "Your name" field in the contact field: "<SCRIPT>alert('Bryant... that was kinda easy')</SCRIPT>". Upon viewing the website through the admin, various alerts were transmitted that showed the user had fallen victim to a cross-site scripting attack. The third alert provides proof that the correct user created the script.
 
-<img src="green-vuln1.gif">
+<img src="green-xss.gif">
 
 Vulnerability #2: __________________
 
