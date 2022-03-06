@@ -17,18 +17,18 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 ## Blue
 
-Vulnerability #1: __________________
+Vulnerability #1: Session Hijacking.
 
-Description: Session Hijacking.
-In the GIF, the user manually logs into the blue website on a first browser (Chrome) and copies the generated PHPSESSIONID that was gathered from that login onto a separate browser (FireFox). The malicious third party was able to then log into the blue web page without ever needing to impact their own account credentials. 
+Description: 
+In the GIF, the user manually logs into the blue website on a first browser (Chrome) and copies the generated PHPSESSIONID that was gathered from that login onto a separate browser (FireFox). The malicious individual was able to then log into the blue web page without ever needing to impact their own account credentials. 
 
 <img src="blue-session-hijack.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: SQL Injection
 
-Description: 
+Description: Although very trivial, upon visiting the "Salesperson List" and injecting the command " OR 1=1--' into the URL, the malicious individual was able to change the currently viewed user into an entirely different user (as highlighted). When replicated on the other website, no apparent change was apparent. By not sanitizinig this URL input, a more tenacious third party could further exploit the vulnerability and gain access to more latent information. 
 
-<img src="blue-vuln2.gif">
+<img src="blue-sql.gif">
 
 ## Green
 
