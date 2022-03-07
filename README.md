@@ -47,11 +47,11 @@ Description:
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: Insecure Direct Object Reference
 
-Description:
+Description: On the red website, a normal user notices that the website URL locates salespersons through an incremenetal ID number. However, for the red website, a user is able to logically conclucde and include the next user after number 9 to acquire information regarded to previously fired and future employees. When emulated on another website (say the blue website), using an ID over 9 will simply redirect the userback to the "Find a Salesperson" page. This vulnerability was quite easy to find when reading the page URLs, since indicating employees through a simple incremental number ID will immediately cause a user to grow suspicious. 
 
-<img src="red-vuln1.gif">
+<img src="red-idor.gif">
 
 Vulnerability #2: __________________
 
