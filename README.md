@@ -62,4 +62,5 @@ Description:
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+Describe any challenges encountered while doing the work.
+The primary challenge encountered while performing this pentesting was actually finding the exploits BEFORE OTHER PEOPLE FOUND THE EXPLOITS. I'm primarily upset because when I was looking for potential areas to exploit XSS, I immediately found which website and page it was because my browser sent me an alert that another student had performed such exploit. But apart from that, having to sift through three different websites and testing which exploits are present was quite time consuming. With other projects, we were told "this website is vulnerable on this page because of this reason." For this, we were told "Some websites have some exploits on some pages; go look for them yourself." While it was more fun, it was hard to find where to start since there was just so many pages present. 
